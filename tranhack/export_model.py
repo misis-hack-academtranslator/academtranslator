@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import click
 import torch
 from liger_kernel.transformers import AutoLigerKernelForCausalLM
@@ -10,6 +12,7 @@ from tranhack.const import BASE_MODEL_NAME
 @click.command()
 @click.option('--device', type=str, default='cuda:0')
 def main(device: str):
+    Path('checkpoint/train-alma/merged').mkdir(parents=True, exist_ok=True)
     AutoTokenizer.from_pretrained(BASE_MODEL_NAME).save_pretrained('checkpoint/train-alma/merged')
     model = AutoPeftModelForCausalLM.from_pretrained(
         BASE_MODEL_NAME,
