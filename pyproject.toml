@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "translator-hack"
+version = "0.1.0"
+description = ""
+authors = ["Афанасьев Максим Александрович <afanasev@tochka.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+datasets = "^3.1.0"
+openpyxl = "^3.1.5"
+pandas = "^2.2.3"
+xztrainer = "^1.2.1"
+torchmetrics = "^1.6.0"
+torch = "^2.5.1"
+accelerate = "^1.1.1"
+transformers = "^4.46.3"
+peft = "^0.13.2"
+bitsandbytes = "^0.44.1"
+click = "^8.1.7"
+protobuf = "^5.29.0"
+sentencepiece = "^0.2.0"
+tiktoken = ">=0.1.0"
+liger-kernel = "^0.4.2"
+tensorboard = "^2.18.0"
+vllm = "^0.6.4.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

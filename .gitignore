@@ -1,0 +1,5 @@
+logs/
+checkpoint/train-alma/merged
+checkpoint/train-alma/save-*
+.idea/
+*.pyc
