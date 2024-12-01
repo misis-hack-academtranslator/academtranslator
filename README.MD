@@ -33,3 +33,7 @@
 ## Предсказания для тестовой выборки от организаторов
 
 1. `poetry run python -m tranhack.generate_answers --mode test`. В результате будет получен файл `data/test_gen.xlsx`, по которому организаторы смогут оценить качество работы модели.
+
+## Запуск бота
+
+1. `TG_TOKEN="ваш_тг_токен_для_бота" poetry run python -m tranhack.bot`
